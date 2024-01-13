@@ -5,8 +5,13 @@ async function loadLastRecipies() {
     let keys = Object.keys(data);
     let obj = data[keys[1]];
     let objKeys = Object.keys(obj);
-    for(let i=objKeys.length;i>objKeys.length-3;i--) {
-        appendItemHomePage(obj,objKeys,i)
+    objKeys.reverse();
+    let i=0;
+    for(let item of objKeys) {
+        if(i>2) {
+            break;
+        }
+        appendItemHomePage(obj,item,i)
     }
 }
 loadLastRecipies();

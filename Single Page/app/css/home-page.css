@@ -79,6 +79,7 @@ h1 {
     justify-content: space-between;
     margin-bottom: 50px;
     align-items: center;
+    flex-direction: row;
   }
   .item {
     width: 30%;
@@ -86,6 +87,7 @@ h1 {
     background-color: lightsteelblue;
     border: 1px;
     border-radius: 20%;
+    flex-direction: column;
   }
   .item .img-div {
     background-color: white;
@@ -98,11 +100,12 @@ h1 {
 
   }
   img {
-    width: 180px;
+    width: 230px;
     height: 130px;
+    border: 1px solid black;
+    border-radius: 20%;
   }
   .item .footer {
-    display: flex;
     align-items: center;
     padding-top: 6px;
     font-size: larger;
@@ -125,3 +128,10 @@ h1 {
   #clone-item {
     display:none;
   }
+  .item span {
+    font-size:20px;
+  }
+#log-out {
+  background-color: brown;
+  color:black;
+}

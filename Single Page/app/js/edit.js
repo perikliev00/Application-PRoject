@@ -94,16 +94,14 @@ export function appendItemCatalog(obj,item,i) {
             await deleteData(myObj._id);
         })
     })
-    i++;
 }
-export async function appendItemHomePage(obj,i,objKeys) {
-    let myObj = obj[objKeys[i]];
+export async function appendItemHomePage(obj,item,i) {
+    let myObj = obj[item];
     let container = document.getElementById('clone-item').cloneNode(true);
     container.removeAttribute('id', 'clone-item');
     container.style.display = "flex";
     document.getElementsByTagName('div')[2].appendChild(container);
-    // let spans = document.getElementsByClassName('text');
-    // let imgs = document.getElementsByTagName('img')
-    // spans[i].textContent = myObj.name;
-    // imgs[i].setAttribute('src', myObj.img)
+    container.getElementsByTagName('span')[0].textContent=myObj.name;
+    container.getElementsByTagName('img')[0].src=myObj.img;
+    i++
 }

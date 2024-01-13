@@ -14,5 +14,6 @@ async function loadData() {
     let i = 0;
     for (let item of objKeys) {
         appendItemCatalog(obj,item,i);
+        i++;
 }
 }

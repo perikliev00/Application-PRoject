@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-after.css">
+    <script src="js/index.js" type="module"></script>
+    <script src="js/index-after.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>My cookbook</h1>
+        <ul id="header-nav">
+            <a id='after-catalog' href="after-login.html">Catalog</a>
+            <a id='create-recipe' href="create-recipe.html">Create Recipe</a>
+            <a id="log-out" href="index.html">Log Out</a>
+        </ul>
+    </header>
+    <main>
+        <div id="clone-container">
+            <div class="text"><span class="recipe-number"></span></div>
+            <div class="img"><img src="" alt="img" class="first-img"></div>
+        </div>
+        <div class="replace" id="replace">
+            <div class="header"><span class="header-span"></span></div>
+            <div class="ingredients">
+                <div id="replace-img-container">
+                <img id ='replace-img'class='img' src='' alt="img">
+                </div>
+                <ul>
+                    Ingrediants:
+                </ul>
+            </div>
+            <div class="preparation">
+                <ul>
+                    Preperation:
+                </ul>
+            </div>
+            </div>
+            <div class="delete"><span>Deleted</span></div>
+    </main>
+    <section id="form-section">
+        <form>
+            <div class="contain">
+                <header>Edit Recipe</header>
+                <div class="labels">
+                <label for=""><span>Name:</span><input name='name' type="text"></label>
+                <label for=""><span>Image:</span><input name="img" type="text"></label>
+                <label><span>Ingredients</span><textarea class="larger" name="ingredients" id="" cols="30" rows="10"></textarea></label>
+                <label for=""><span>Preperation:</span><textarea class="larger" name="steps" id="" cols="30" rows="10"></textarea></label>
+                <button type="submit">Edit Recipe</button>
+                </div>
+            </div>
+            </form>
+        </section>
+</body>
+</html>
